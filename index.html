@@ -2,16 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My Project</title>
+	<title>PokeDex</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
-
-	<div class="container">
-		<h1>Hello!!</h1>
-	</div>
-
+	<header>
+		<img src="./assets/Pokemon_logo.png" alt="PokeLogo">
+		<form>
+			<label for="pokemonInput">Please enter the name of a Pokemon!</label>
+			<input type="text" id="pokemonInput" pattern="^[a-zA-Z\s]+$">
+			<input type="submit" value="Initialize Pokedex" >
+		</form>
+	</header>
+	<section id="scroll" class="main">
+		<div class="pokedex">
+			<div class="pokedexHeaderContainer">
+				<div class="pokedexHeader">
+					<div class="dots">
+						<div class="bigDot">
+						</div>
+						<ul class="smallDots">
+							<li class="smallDot"></li>
+							<li class="smallDot"></li>
+							<li class="smallDot"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="pokedexPanelContainer">
+				<div class="pokedexPanel">
+					<div class="pokedexScreen">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>	
 	<script src="public/scripts/main.js"></script>
-	
 </body>
 </html>

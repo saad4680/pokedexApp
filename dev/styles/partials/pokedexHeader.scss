@@ -1,0 +1,53 @@
+.pokedexHeaderContainer {
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 37%, 100% 11%, 75% 11%, 49% 17%, 22% 24%, 0 24%, 0 0);
+	clip-path: polygon(50% 0%, 100% 0, 100% 37%, 100% 11%, 75% 11%, 49% 17%, 22% 24%, 0 24%, 0 0);
+	height:500px;
+	background-color: rgb(158, 0, 0);
+	position: relative;
+
+
+}
+
+.pokedexHeader {
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 37%, 100% 11%, 75% 11%, 49% 17%, 22% 24%, 0 24%, 0 0);
+	clip-path: polygon(50% 0%, 100% 0, 100% 37%, 100% 11%, 75% 11%, 49% 17%, 22% 24%, 0 24%, 0 0);
+	background-color: rgb(251, 5, 5);
+	position: absolute;
+	height: 500px;
+	width:450px;
+	top:-5px;
+
+
+}
+.dots {
+	margin-top:5px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.smallDots {
+	list-style-type: none;
+	padding:0;
+	display: flex;
+}
+.smallDot {
+	height:20px;
+	width:20px;
+	margin: 5px;
+	border-radius:50%;
+	border: 2px solid black;
+}
+.bigDot {
+	height:90px;
+	width:90px;
+	margin: 10px;
+	border-radius:50%;
+	border: 5px solid white;
+	background-color: rgb(10, 255, 255);
+}
+.smallDot:nth-Child(2) {
+	background-color: yellow;
+}
+.smallDot:nth-Child(3) {
+	background-color: lime;
+}
